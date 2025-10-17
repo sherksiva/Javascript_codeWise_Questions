@@ -1,6 +1,6 @@
 # sample_code_exercise
 
-<h6># 1. Find Largest number</h6>
+#h6 1. Find Largest number
 
 ```
 function findLargest1(arr) {
@@ -15,7 +15,7 @@ function findLargest1(arr) {
 console.log(`Largest Number Method 1 :`, findLargest1([10,0,4,15,-1,8]));
 ```
 
-<h6># 2. another method Find Largest Number</h6>
+h6# 2. another method Find Largest Number
 
 ```
     const array = [1, 3, 2, -1, 0, 7];
@@ -23,7 +23,7 @@ console.log(`Largest Number Method 1 :`, findLargest1([10,0,4,15,-1,8]));
     console.log(`Largest Number Method 2: `,Math.max(...array));
 ```
 
-<h6># 3. Find Smallest number</h6>
+h6# 3. Find Smallest number
 
 ```
 function findSmallest(arr) {
@@ -39,7 +39,7 @@ function findSmallest(arr) {
 console.log(`Smallest Number Method 1 :`,findSmallest([2, 0, -3, -5, -5.5]));
 ```
 
-<h6>#4. Find smallest value other method</h6>
+h6#4. Find smallest value other method
 
 ```
 function findSmallest2(arr) {
@@ -61,7 +61,7 @@ console.log(findTwoLargestNumber([20, 3, 25, 99, 0, -3, -4.5]));
 ```
 
 
-<h6>#6. Find two smallest number</h6>
+h6#6. Find two smallest number
 
 ```
 function findTwoSmallestNumber (arr) {
