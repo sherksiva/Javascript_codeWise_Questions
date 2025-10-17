@@ -111,3 +111,4 @@ let newData = ["a", "ab", "a", "ab", "set", "set"];
 let resultData = [...new Set(newData)];
 console.log("The unique Array = ",resultData);
 ```
+Above 3 methods also work for string array.
