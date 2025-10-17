@@ -1,6 +1,6 @@
 # sample_code_exercise
 
-#1. Find Largest number
+<h1># 1. Find Largest number</h1>
 ```
 function findLargest1(arr) {
     let largest = arr[0];
