@@ -1,4 +1,4 @@
-# sample_code_exercise
+# Javascript code snippet / Exercises
 
 ### 1. Find Largest number
 
