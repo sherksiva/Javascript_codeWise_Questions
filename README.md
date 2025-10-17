@@ -1,6 +1,6 @@
 # sample_code_exercise
 
-#h6 1. Find Largest number
+1. Find Largest number
 
 ```
 function findLargest1(arr) {
@@ -15,7 +15,7 @@ function findLargest1(arr) {
 console.log(`Largest Number Method 1 :`, findLargest1([10,0,4,15,-1,8]));
 ```
 
-h6# 2. another method Find Largest Number
+2. another method Find Largest Number
 
 ```
     const array = [1, 3, 2, -1, 0, 7];
@@ -23,7 +23,7 @@ h6# 2. another method Find Largest Number
     console.log(`Largest Number Method 2: `,Math.max(...array));
 ```
 
-h6# 3. Find Smallest number
+3. Find Smallest number
 
 ```
 function findSmallest(arr) {
@@ -39,7 +39,7 @@ function findSmallest(arr) {
 console.log(`Smallest Number Method 1 :`,findSmallest([2, 0, -3, -5, -5.5]));
 ```
 
-h6#4. Find smallest value other method
+4. Find smallest value other method
 
 ```
 function findSmallest2(arr) {
@@ -48,7 +48,7 @@ function findSmallest2(arr) {
 }
 console.log(`Smallest Number Method 2 :`, findSmallest2([99, 5, 3, 100, 1 , 0, -7, -7.5]));
 ```
-<h6>#5. Find two largest number</h6>
+5. Find two largest number
 
 ```
 function findTwoLargestNumber (arr) {
@@ -61,7 +61,7 @@ console.log(findTwoLargestNumber([20, 3, 25, 99, 0, -3, -4.5]));
 ```
 
 
-h6#6. Find two smallest number
+6. Find two smallest number
 
 ```
 function findTwoSmallestNumber (arr) {
@@ -73,7 +73,7 @@ function findTwoSmallestNumber (arr) {
 console.log(findTwoSmallestNumber([20, -7, 25, 99, 0, -3, -4.5]));
 ```
 
-<h6>#7. Remove duplicate Values</h6>
+7. Remove duplicate Values
 
 ```
 function removeDuplicateValues (arr) {
@@ -84,7 +84,7 @@ function removeDuplicateValues (arr) {
 console.log(`uniqueArray Method 1=`, removeDuplicateValues([2, 4, 2, 0 , -1 , -1 , -5, -0.3, 0.2, -0.3, "a", "a", "ab"]));
 ```
 
-<h6>#8. Remove Duplicates method 2</h6>
+8. Remove Duplicates method 2
 
 ```
 function removeDuplicates(arr) {
@@ -93,7 +93,7 @@ function removeDuplicates(arr) {
 console.log(`uniqueArray Method 2=` , removeDuplicates([1, 2, 5, 3, 2, 5, 7, 0, 0, -3.4, -4, -3.4, "ab", "ab", "a", "cd"]));
 ```
 
-<h6>#9. Remove Duplicate method 3</h6>
+9. Remove Duplicate method 3
 
 ```
 let a = [1, 2, 5, 3, 2, -3.5, 0, 0,"string", "string", "a", "a", 5, 7]; 
@@ -104,7 +104,7 @@ let uniqueArray = a.reduce((acc, val) => {
 console.log(`UniqueArray Method 3=`, uniqueArray);
 ```
 
-<h6>#10. Remove Duplicate Values in string input Array</h6>
+10. Remove Duplicate Values in string input Array
 
 ```
 let newData = ["a", "ab", "a", "ab", "set", "set"];
