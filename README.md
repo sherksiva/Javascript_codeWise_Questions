@@ -1,6 +1,6 @@
 # sample_code_exercise
 
-1. Find Largest number
+###1. Find Largest number
 
 ```
 function findLargest1(arr) {
