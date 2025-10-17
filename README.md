@@ -15,7 +15,7 @@ function findLargest1(arr) {
 console.log(`Largest Number Method 1 :`, findLargest1([10,0,4,15,-1,8]));
 ```
 
-### 2. another method Find Largest Number
+### 2. Another method Find Largest Number
 
 ```
     const array = [1, 3, 2, -1, 0, 7];
