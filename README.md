@@ -116,7 +116,7 @@ Above 3 methods also work for string array.
 ### 11. Sort Function using array for loop 
 
 ```
-funtion sorter(array){
+function sorter(array){
     let swap;
     for(let i = 1; i<array.length; i++;){
         if(array[i-1] > array[i]) {
@@ -127,5 +127,5 @@ funtion sorter(array){
     }
     return swap;
 }
-console.log("Sorted array :", sorter([4,8,2,9,0,-8,-2,-12,2.5,-4.5));
+console.log("Sorted array :", sorter([4,8,2,9,0,-8,-2,-12,2.5,-4.5]));
 ```
