@@ -101,7 +101,39 @@ console.log(`10. Remove Duplicate Values in string input Array`);
 let newData = ["a", "ab", "a", "ab", "set", "set"];
 let resultData = [...new Set(newData)];
 console.log("The unique Array = ",resultData);
-console.log(`/==================================================================================/`)
+console.log(`/==================================================================================/`);
+
+console.log(`11. Sort function for only passitive value , without dupilicate numbers and non repetive values`)
+function sorter(array){
+    var swap;
+    console.log(array , 'array');
+    for(var i = 1; i<array.length; i++){
+        if(array[i-1] > array[i]) {
+            swap = array[i-1];
+            array[i-1] = array[i];
+            array[i] = swap;
+        }
+    }
+    return array;
+}
+console.log("Sorted array =", sorter([1,5,2,4,6]));
+console.log(`/==================================================================================/`);
+
+console.log(`12. Sort function for all values (repetive values and negative values)`);
+var Arr = [1, 7, 2, 8, 3, 4, 5, 0, 9, -1.4, -1.1, 2];
+
+for (var i = 1; i < Arr.length; i++){
+    for (var j = 0; j < i; j++){
+      if (Arr[i] < Arr[j]) {
+          var x = Arr[i];
+          Arr[i] = Arr[j];
+          Arr[j] = x;
+      }
+    }
+}
+
+console.log(Arr);
+console.log(`/==================================================================================/`);
 
 
 
