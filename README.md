@@ -112,3 +112,20 @@ let resultData = [...new Set(newData)];
 console.log("The unique Array = ",resultData);
 ```
 Above 3 methods also work for string array.
+
+### 11. Sort Function using array for loop 
+
+```
+funtion sorter(array){
+    let swap;
+    for(let i = 1; i<array.length; i++;){
+        if(array[i-1] > array[i]) {
+            swap = array[i-1];
+            array[i-1] = array[i];
+            array[i] = swap;
+        }
+    }
+    return swap;
+}
+console.log("Sorted array :", sorter([4,8,2,9,0,-8,-2,-12,2.5,-4.5));
+```
