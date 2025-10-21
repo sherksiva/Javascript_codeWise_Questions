@@ -113,19 +113,37 @@ console.log("The unique Array = ",resultData);
 ```
 Above 3 methods also work for string array.
 
-### 11. Sort Function using array for loop 
-
+### 11. Sort function for only passitive value , without dupilicate numbers and non repetive values
 ```
 function sorter(array){
-    let swap;
-    for(let i = 1; i<array.length; i++;){
+    var swap;
+    console.log(array , 'array');
+    for(var i = 1; i<array.length; i++){
         if(array[i-1] > array[i]) {
             swap = array[i-1];
             array[i-1] = array[i];
             array[i] = swap;
         }
     }
-    return swap;
+    return array;
 }
-console.log("Sorted array :", sorter([4,8,2,9,0,-8,-2,-12,2.5,-4.5]));
+console.log("Sorted array :", sorter([1,5,2,4,6]));
+```
+
+### 12. Sort function for all values (repetive values and negative values)
+
+```
+var Arr = [1, 7, 2, 8, 3, 4, 5, 0, 9, -1.4, -1.1, 2];
+
+for (var i = 1; i < Arr.length; i++){
+    for (var j = 0; j < i; j++){
+      if (Arr[i] < Arr[j]) {
+          var x = Arr[i];
+          Arr[i] = Arr[j];
+          Arr[j] = x;
+      }
+    }
+}
+
+console.log(Arr);
 ```
