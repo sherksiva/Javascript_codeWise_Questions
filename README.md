@@ -147,3 +147,44 @@ for (var i = 1; i < Arr.length; i++){
 
 console.log(Arr);
 ```
+
+### 13. [2, [3,4, [5,6,7],1],8] to [1,2,3,4,5,6,7,8] result javascript ?
+
+```
+let a = [2, [3, 4, [5, 6, 7], 1], 8];
+let result = a.flat(Infinity).sort((x, y) => x - y);
+console.log(result); // [1, 2, 3, 4, 5, 6, 7, 8]
+```
+Explanation:
+
+flat(Infinity) → flattens any level of nested arrays.
+
+sort((x, y) => x - y) → sorts numbers in ascending order (default sort() sorts as strings).
+
+### 14. Remove Duplicate objects from array ?
+
+```
+let arr = [
+  { a: 5 },
+  { a: 5 },
+  { c: 10 },
+  { b: 20, d: 25 },
+  { b: 20, d: 25 },
+  { a: 5, b: 20, c: 10, d: 25 }
+];
+
+let uniqueArr = Array.from(
+  new Map(arr.map(obj => [JSON.stringify(obj), obj])).values()
+);
+
+console.log(uniqueArr);
+```
+Explanation :
+
+JSON.stringify(obj) converts each object to a string (so duplicates look the same).
+
+Map ensures unique keys (only one copy per stringified object).
+
+.values() gives back the original unique objects.
+
+
