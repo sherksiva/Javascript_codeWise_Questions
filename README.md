@@ -218,5 +218,44 @@ let result = numbers.concat(strings);
 console.log(result);
 ```
 
+### 16. Sorting the array without sort keyword
+
+```
+let arr = [2, "b", 4, "d", 3, "a", "c", "e", 5, 1];
+
+// Step 1: Separate numbers and strings
+let numbers = arr.filter(item => typeof item === "number");
+let strings = arr.filter(item => typeof item === "string");
+
+
+// Step 2: Sort numbers (ascending) — using Bubble Sort
+for (let i = 0; i < numbers.length - 1; i++) {
+  for (let j = 0; j < numbers.length - i - 1; j++) {
+    if (numbers[j] > numbers[j + 1]) {
+      let temp = numbers[j];
+      numbers[j] = numbers[j + 1];
+      numbers[j + 1] = temp;
+    }
+  }
+}
+
+// Step 3: Sort strings (alphabetically) — using Bubble Sort
+for (let i = 0; i < strings.length - 1; i++) {
+  for (let j = 0; j < strings.length - i - 1; j++) {
+    if (strings[j] > strings[j + 1]) {
+      let temp = strings[j];
+      strings[j] = strings[j + 1];
+      strings[j + 1] = temp;
+    }
+  }
+}
+
+// Step 4: Combine
+let result = numbers.concat(strings);
+console.log(result);
+```
+
+
+
 
 
