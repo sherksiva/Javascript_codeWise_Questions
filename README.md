@@ -187,4 +187,36 @@ Map ensures unique keys (only one copy per stringified object).
 
 .values() gives back the original unique objects.
 
+### 15 . [2, "b", 4, "d", 3, "a", "c", "e", 5, 1] to [2, 4, 3, 5, 1, "b", "d", "a", "c", "e"] javascript
+
+```
+let arr = [2, "b", 4, "d", 3, "a", "c", "e", 5, 1];
+
+let numbers = arr.filter(item => typeof item === "number");
+let strings = arr.filter(item => typeof item === "string");
+
+let result = numbers.concat(strings);
+console.log(result);
+```
+
+#### Explanation :
+filter() separates the array by type (number or string).
+
+concat() merges the two filtered arrays — numbers first, then strings.
+
+### With Sort :
+```
+let arr = [2, "b", 4, "d", 3, "a", "c", "e", 5, 1];
+
+// numeric sort
+let numbers = arr .filter(item => typeof item === "number").sort((a, b) => a - b);
+
+// alphabetical sort
+let strings = arr .filter(item => typeof item === "string") .sort();
+
+let result = numbers.concat(strings);
+console.log(result);
+```
+
+
 
