@@ -212,7 +212,7 @@ let arr = [2, "b", 4, "d", 3, "a", "c", "e", 5, 1];
 let numbers = arr .filter(item => typeof item === "number").sort((a, b) => a - b);
 
 // alphabetical sort
-let strings = arr .filter(item => typeof item === "string") .sort();
+let strings = arr .filter(item => typeof item === "string").sort();
 
 let result = numbers.concat(strings);
 console.log(result);
